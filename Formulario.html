@@ -1,0 +1,102 @@
+<doctypehtml>
+<html >
+
+    <cabeça >
+        <!-- Metadados -->
+        <meta  charset ="utf-8" >
+        <meta  name ="viewport" content =" width=device-width, initial-scale=1.0, shrink-to-fit=no " >
+
+        <!-- CSS -->
+        <link  rel =" stylesheet " type =" text/css " href =" formulario.css " media =" screen " >
+
+        <!-- Título da página (aparece na aba) -->
+        <title > Cadastro </title >
+        
+    </cabeça >
+        <body>
+          <div class="container">
+          <div class="header">       
+            <h2  id =" titulo " > Cadastro de Alunos </h1 >
+            <h3  id =" subtitulo " > Complete suas informações </p >
+            <br>
+        </div >
+
+        <!-- Início do formulário -->
+        <formulário >
+
+            <div>
+                <!-- Campo do nome com legenda "nome" e css de classe "campo" -->
+                <div>
+                    <label><strong >NOME</strong></label>
+                    <input type="text" name ="nome" id="nome" obrigatorio>
+                </div >
+
+                <!-- Campo do sobrenome com legenda "sobrenome" e css de classe "campo" -->
+                <div>
+                    <label  for =" sobrenome " > <strong > SOBRENOME </strong > </label >
+                    <input  type =" text " name =" sobrenome " id =" sobrenome " obrigatório >
+                </div >
+            </fieldset > 
+
+            <!-- Campo de email com-->
+            <div>
+                <label  for =" email " > <strong > EMAIL </strong > </label >
+                <input  type =" email " name =" email " id =" email " obrigatório >
+            </div >
+
+            <!--Campo de Treinos com 3 opções de Niveis ​​(nivel de treino)"campo" -->
+            <fieldset>
+                <legend> <strong >QUAL É O SEU NÍVEL NA ACADEMIA ?</strong > </legend>
+                <div>
+                  <input type = "checkbox" id = "INICIANTE" name = "interesse" value = "INICIANTE" checked>
+                  <label for = "coding"> <strong >INICIANTE</strong > </label>
+                </div>
+                <div>
+                  <input type = "checkbox" id = "INTERMEDIÁRIO" name = "interesse" value = "INTERMEDIÁRIO">
+                  <label for = "INTERMEDIÁRIO"> <strong >INTERMEDIÁRIO</strong > </label>
+                </div>
+                <div>
+                  <input type = "checkbox" id = "AVANÇADO" name = "interesse" value = "AVANÇADO">
+                  <label for = "AVANÇADO"> <strong >AVANÇADO</strong > </label>
+                  </div>
+              </fieldset>
+
+            <!-- Campo de planos com 3 opções para escolha (selecionar option) e css de classe "campo" -->
+            <div>
+                <label><strong > PLANOS MENSAIS </strong > </label >
+                <select>  id <strong > " planos "</strong> obrigatório >
+                  <option> Selecione </option >
+                  <option > 1 MêS R$ 35,90  </option >
+                  <option > 3 MêS R$ 69,90 </option >
+                  <option > 6 MêS R$ 99,99 </option >
+                  </select>
+            </div >
+
+            <fieldset>
+                <legend> <strong > TEM ALGUM TIPO DE DOENÇAS OU PATOLOGIAS ? ?</strong > </legend>
+                <div>
+                  <input type = "checkbox" id = "SIM" name = "interesse" value = "SIM" checked>
+                  <label for = "coding"> <strong >SIM</strong > </label>
+                </div>
+                <div>
+                  <input type = "checkbox" id = "NÃO" name = "interesse" value = "NÃO">
+                  <label for = "NÃO"> <strong >NÃO</strong > </label>
+                </div>
+              </fieldset>
+            
+            <!-- Caixa de texto -->
+            <div><br>
+                <label  for =" DOENÇAS " > <strong > SE A RESPOSTA FOR "SIM" DESCREVA: </strong > </label >
+                </div>
+            <div>   
+                <textarea  rows =" 6 " style =" width: 26em " id =" DOENÇAS " name =" DOENÇAS " > </textarea >
+            </div >
+
+            <!-- Botão para enviar o formulário -->
+            <button  class =" botao " type =" submit " onsubmit ="" > Concluído </button >            
+
+        </formulário>
+
+    </corpo >
+
+</html>
